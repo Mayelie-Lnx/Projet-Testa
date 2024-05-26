@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montez&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lato";
+}
+nav {
+  background-color: #463320;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+nav img {
+  width: 80px;
+  margin: 1rem;
+}
+nav form input {
+  padding: 0.4rem 0rem 0.4rem 0.2rem;
+  width: 300px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+nav form div {
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+nav form i {
+  font-size: 17px;
+  margin: 0;
+  padding: 0.2rem;
+}
+nav li a {
+  color: white;
+  font-size: 13px;
+  margin: 1rem;
+}
+nav i {
+  font-size: 25px;
+  margin: 0.5rem;
+}
+nav li img {
+  width: 30px;
+  color: white;
+}
+nav .burger {
+  display: none;
+}
+header section {
+  height: 90vh;
+  background: linear-gradient(transparent 50%, rgb(0, 0, 0)),
+    url("../Images/ali-kazal-YE1Omh3OJgg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+header section p {
+  margin: 4rem;
+}
+span {
+  font-family: "Montez";
+  font-size: 2rem;
+}
+
+/* ============================================== */
+main h2 {
+  font-family: "Kanit" sans-serif;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 2rem;
+}
+main .section-1,
+.section-3 {
+  width: 95%;
+  margin: auto;
+}
+.section-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+article {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 23%;
+  margin: 0.3rem;
+}
+.article-container {
+  margin: 1rem;
+}
+.article-div-img {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; */
+}
+article img {
+  width: 160px;
+  height: 220px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #c0c0c0, -2px -2px 5px #bdbdbd;
+}
+article .article-div-img i {
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  height: 3vh;
+}
+article .article-div-img i:hover {
+  color: #a80000;
+}
+/* .article-div-img input {
+  border: 1px solid red;
+  border-radius: 30px;
+} */
+.article-div-img div {
+  width: 5%;
+  height: 2vh;
+  padding: 0.5%;
+  margin: 0.5%;
+  border-radius: 30px;
+  /* background-clip: content-box, border-box; */
+  align-items: center;
+}
+.div-img-1 {
+  background: linear-gradient(
+    to left,
+    #c0914c 33.33%,
+    #d7d7bf 33.33%,
+    #d7d7bf 66.66%,
+    #015064 66.66%
+  );
+}
+.div-img-2 {
+  background: linear-gradient(
+    to left,
+    #43325c 33.33%,
+    #f3f3f3 33.33%,
+    #f3f3f3 66.66%,
+    #e2b9cb 66.66%
+  );
+}
+.div-img-3 {
+  background: linear-gradient(
+    to left,
+    #fb8995 33.33%,
+    #3e5585 33.33%,
+    #3e5585 66.66%,
+    #ff0048 66.66%
+  );
+}
+.div-img-4 {
+  background: linear-gradient(to left, #d9d7cb 50%, #4f2114 50%);
+}
+.div-img-5 {
+  background: linear-gradient(
+    to left,
+    #121212 33.33%,
+    #a5a8aa 33.33%,
+    #a5a8aa 66.66%,
+    #044eb6 66.66%
+  );
+}
+.div-img-6 {
+  background: linear-gradient(
+    to left,
+    #cfae61 33.33%,
+    #271e25 33.33%,
+    #271e25 66.66%,
+    #fb6b58 66.66%
+  );
+}
+.div-img-7 {
+  background: linear-gradient(to left, #333e42 50%, #028ecf 50%);
+}
+.div-img-8 {
+  background-color: #000000;
+}
+.div-img-9 {
+  background: linear-gradient(to left, #9b92d5 50%, #dbd9e6 50%);
+}
+.div-img-10 {
+  background: linear-gradient(to left, #a12961 50%, #2a2a2a 50%);
+}
+.div-img-11 {
+  background: linear-gradient(to left, #597099 50%, #c8ceda 50%);
+}
+.div-img-12 {
+  background: linear-gradient(to left, #b4bbb3 50%, #292a25 50%);
+}
+article .article-div-text {
+  text-align: center;
+}
+article h3 {
+  font-weight: 800;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+article h4 {
+  font-size: 13px;
+}
+article p {
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0.3rem;
+}
+article .article-div-text i {
+  font-size: 15px;
+  color: #ebc351;
+}
+article .star {
+  padding-left: 5rem;
+}
+article .prix {
+  font-weight: 700;
+  font-size: 14px;
+}
+article .article-div-button {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+article button {
+  padding: 1rem;
+  width: 100%;
+  margin: 0;
+  border-radius: 0px 0px 4px 4px;
+  border: none;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+article button:hover {
+  background-color: #1b2b26;
+}
+#imgfix {
+  background-image: url("../Images/BG\ 8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 60vh;
+}
+.section-2 {
+  background-color: #463320;
+  padding: 2rem;
+}
+.section-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section-2 div {
+  display: flex;
+  align-items: center;
+}
+.section-2 i {
+  color: white;
+  font-size: 35px;
+  margin: 0.5rem;
+}
+.section-2 p {
+  font-size: 13px;
+  margin: 1rem;
+  color: white;
+}
+.section-2 a {
+  text-decoration: underline;
+  font-size: 12px;
+  color: white;
+}
+.en-savoir-plus {
+  flex-direction: column;
+  text-align: center;
+}
+footer section {
+  background-color: black;
+  margin-top: 2rem;
+  display: flex;
+  padding: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+footer section img {
+  width: 120px;
+}
+footer section h5 {
+  color: white;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+footer section a {
+  color: white;
+  font-size: 0.8rem;
+}
+footer section i {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+}
+footer .footer-div {
+  background-color: #1b2b26;
+  color: white;
+  /* padding: 0.7rem; */
+}
+.footer-div ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-div li {
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 1024px) {
+  nav .burger {
+    display: block;
+    color: white;
+    font-size: 2rem;
+  }
+  nav .se-connecter {
+    display: none;
+  }
+  form input {
+    width: 100%;
+  }
+  nav form div {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    border: 2px solid #463320;
+    border-radius: 0;
+    width: 98.65%;
+  }
+}
+@media screen and (max-width: 1284px) {
+  article {
+    margin: 0.5rem;
+    width: 22%;
+  }
+  .section-3 {
+    width: 90%;
+  }
+  .section-container {
+    justify-content: center;
+  }
+  article img {
+    width: 140px;
+    height: 210px;
+  }
+}
