@@ -251,6 +251,7 @@ article .div-paiement-img {
 .article-2 form i {
   color: #757575;
   width: 6%;
+  margin: 1rem;
 }
 .article-2 label {
   margin: 0.5rem;
@@ -285,7 +286,7 @@ article .div-paiement-img {
   background-color: black;
   color: white;
   width: 31%;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem 1rem;
   margin: 0;
 }
 .article-3 div button:nth-child(1) {
@@ -304,7 +305,7 @@ article .div-paiement-img {
 }
 .article-3 form {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .article-3 div input {
   margin: 2rem 0;
@@ -317,6 +318,7 @@ article .div-paiement-img {
   border-radius: 5px;
   border: none;
   outline: none;
+  margin: 0.3rem;
 }
 .article-3 #adresse {
   width: 40%;
@@ -325,10 +327,20 @@ article .div-paiement-img {
 .article-3 #code {
   width: 10%;
 }
+
 /* ============== Section Aside ============== */
 
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 main .section-aside {
   flex: auto;
+  animation: 3s slide-right;
 }
 .section-aside article {
   background-color: white;
@@ -465,14 +477,38 @@ button {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   line-height: 2rem;
   letter-spacing: 1px;
+}
+.section-aside .div-container-3 p {
+  margin-bottom: 1.5rem;
 }
 .section-aside .div-container-3 span {
   font-weight: 800;
   font-size: 20px;
   font-family: "Lato";
+}
+.section-aside .div-container-3 div {
+  background: linear-gradient(transparent 30%, rgb(0, 0, 0)),
+    url("../Images/BG\ 4.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 40vw;
+}
+.section-aside .div-container-3 div p {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.section-aside .div-container-3 div span {
+  font-family: "Montez";
+  font-size: 3.3rem;
 }
 
 /* ================ RESPONSIVE ================ */
@@ -581,6 +617,9 @@ button {
   footer section:nth-child(2) li {
     padding: 1rem 1rem;
   }
+  main .section-1 {
+    width: 80%;
+  }
   .div-details .div-h5 {
     font-size: 16px;
   }
@@ -590,22 +629,36 @@ button {
   .div-text p {
     font-size: 14px;
   }
+  .section-aside article {
+    padding: 1rem 0;
+  }
+  .section-aside article .container-1 {
+    width: 85%;
+  }
 }
 @media screen and (max-width: 873px) {
   .section-aside article {
     display: flex;
     flex-direction: column;
-    /* align-items: baseline; */
   }
-  .section-aside article .container-1,
-  .container-2 {
+  .section-aside article .container-1 {
     width: 90%;
-    margin: 2rem;
+    margin: 4rem 0 2rem 0;
     margin-left: auto;
     margin-right: auto;
   }
+  .section-aside article .container-2 {
+    margin: 0 2.5rem 2rem 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
   .article-1 form #select-pays {
-    width: 99%;
+    width: 97%;
+  }
+  .article-1 form input,
+  select {
+    margin: 0.6rem 2rem;
   }
   .article-1 form input {
     width: 92%;
@@ -614,6 +667,11 @@ button {
     width: 40px;
     height: 25px;
     margin: 0.3em;
+  }
+  .article-2 form input #num-carte,
+  #date-exp,
+  #CVV {
+    padding: 0.6rem 7rem 0.6rem 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -638,6 +696,28 @@ button {
   footer section:nth-child(2) ul {
     flex-wrap: wrap;
   }
+  main h3 {
+    width: 30%;
+  }
+  .article-3 div button {
+    width: 31%;
+    padding: 1.5rem 0.5rem;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  main h3 {
+    width: 45%;
+  }
+  .article-3 div button {
+    width: 39%;
+    padding: 1rem 0.5rem;
+    margin: 0;
+    font-size: 0.7rem;
+  }
+  .article-3 label {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 425px) {
   header section p {
@@ -646,8 +726,14 @@ button {
   nav ul {
     margin-left: -20rem;
   }
-  .div-paiement-img img {
-    display: none;
+  article .div-paiement-img {
+    width: 100%;
+  }
+  .section-1 article button {
+    width: 85%;
+  }
+  .article-3 label {
+    font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 320px) {
@@ -663,11 +749,7 @@ button {
     background-color: #1b2b26;
     width: 60%;
     padding: 0.5rem;
-
     font-size: 15px;
-  }
-  .div-paiement-img img {
-    display: none;
   }
   .article-2 img {
     width: 30px;
@@ -677,5 +759,8 @@ button {
   .section-aside article .container-1,
   .container-2 {
     width: 100%;
+  }
+  .article-3 label {
+    font-size: 0.5rem;
   }
 }

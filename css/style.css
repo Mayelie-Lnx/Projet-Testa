@@ -380,20 +380,11 @@ article button:hover {
 .section-2 {
   display: flex;
   justify-content: space-evenly;
-  animation: slide-in 6000ms;
 }
 .section-2 div {
   display: flex;
   align-items: center;
   margin: 1rem;
-}
-@keyframes slide-in {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
 }
 .section-2 i {
   color: white;
