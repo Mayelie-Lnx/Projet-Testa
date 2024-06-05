@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Panier</title>
+    <link rel="stylesheet" href="./css/panier.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html"
+          ><img src="./Images/Logo/Logo.png" alt="Logo du site Testa"
+        /></a>
+        <form action=".search">
+          <div>
+            <i class="fas fa-search"></i>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Rechercher..."
+            />
+          </div>
+        </form>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-user-circle"></i>Se Connecter</a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+        <div class="div-burger">
+          <input type="checkbox" name="check" id="check" />
+          <label for="check" class="burger">
+            <i class="fas fa-bars"></i>
+          </label>
+          <div class="menu-burger">
+            <ul>
+              <li>
+                <a href="#">Se Connecter</a>
+              </li>
+              <li>
+                <button type="button">S'inscrire</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section-1">
+        <article class="article-1">
+          <h3>Information client :</h3>
+          <form>
+            <input
+              type="text"
+              id="nom"
+              placeholder="Nom"
+              minlength="1"
+              required
+            />
+            <input
+              type="text"
+              id="prenom"
+              placeholder="Prénom"
+              minlength="1"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Adresse-e-mail"
+              required
+            />
+            <select name="Pays" id="select-pays">
+              <optgroup label="Pays">
+                <!-- <option value="Pays">--Pays--</option> -->
+                <option value="France">France</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="France">Espagne</option>
+                <option value="France">Canada</option>
+                <option value="France">Italie</option>
+                <option value="France">Royaume-Unis</option>
+              </optgroup>
+            </select>
+            <input
+              type="tel"
+              name="tel"
+              placeholder="Téléphone"
+              minlength="10"
+              required
+            />
+            <input
+              type="text"
+              id="adresse"
+              placeholder="Adresse"
+              minlength="1"
+              required
+            />
+            <input
+              type="text"
+              id="ville"
+              placeholder="Ville"
+              minlength="1"
+              required
+            />
+            <input
+              type="text"
+              id="code"
+              placeholder="Code postal"
+              pattern="[0-9]{5}"
+              maxlength="5"
+              required
+            />
+            <button type="submit">Enregistrer mes informations</button>
+          </form>
+        </article>
+        <article class="article-2">
+          <h3>Mode de paiement :</h3>
+          <div class="div-paiement-img">
+            <img src="./Images/Logo/Logo-PayPal.png" alt="Logo PayPal" />
+            <img src="./Images/Logo/Logo-Visa.png" alt="Logo Visa" />
+            <img
+              src="./Images/Logo/Logo-MasterCard.png"
+              alt="Logo MasterCard"
+            />
+            <img src="./Images/Logo/logo-CB.jpg" alt="Logo Carte Bancaire" />
+          </div>
+          <form>
+            <label for="Nom-sur-carte">Nom sur la carte</label>
+            <div class="div-nom-carte">
+              <input
+                type="text"
+                name="Nom-sur-carte"
+                id="Nom-sur-carte"
+                placeholder="Nom"
+              />
+            </div>
+            <label for="Num-carte">Numéro de la carte</label>
+            <div class="div-num-carte">
+              <input
+                type="text"
+                name="Num-carte"
+                id="Num-carte"
+                placeholder="••••     ••••     ••••     ••••     ••••"
+                maxlength="16"
+                required
+              />
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <label for="date-exp">Date d'expiration</label>
+            <div class="div-date-exp">
+              <input
+                type="p"
+                name="date-exp"
+                id="date-exp"
+                placeholder="MM/AA"
+                maxlength="4"
+                required
+              />
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <label for="CVV">CVV</label>
+            <div class="div-cvv">
+              <input
+                type="text"
+                name="CVV"
+                id="CVV"
+                placeholder="•••"
+                maxlength="3"
+                required
+              />
+              <i class="fas fa-lock"></i>
+            </div>
+            <button type="submit">Payer</button>
+          </form>
+        </article>
+        <article class="article-3">
+          <h3>Mode de livraison :</h3>
+          <div>
+            <button type="button">Livraison à domicile</button>
+            <button type="button">Point Mondial Relay</button>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >L'adresse de facturation est la même que celle de
+              livraison</label
+            >
+          </div>
+          <form>
+            <input
+              type="text"
+              name="adresse"
+              id="adresse"
+              placeholder="Adresse"
+              minlength="1"
+              required
+            />
+            <input
+              type="text"
+              name="code"
+              id="code"
+              placeholder="Code postal"
+              pattern="[0-9]{5}"
+              required
+            />
+            <input
+              type="text"
+              name="ville"
+              id="ville"
+              placeholder="Ville"
+              minlength="1"
+              required
+            />
+          </form>
+        </article>
+      </section>
+      <section class="section-aside">
+        <article>
+          <div class="container-1">
+            <div class="div-1-article">
+              <h4>1 Article</h4>
+              <a href="./index.html">Continuer mes achats ?</a>
+            </div>
+            <div class="int-container-1">
+              <div class="div-img">
+                <img
+                  src="./Images/Image-3.jpg"
+                  alt="Photo de coque de téléphone bleu"
+                />
+              </div>
+              <div class="div-details">
+                <div class="div-h5">
+                  <h5>Commande N°123456789</h5>
+                </div>
+                <div class="p-span">
+                  <p><span>Tout en noir</span></p>
+                  <p><span>45,99€</span></p>
+                </div>
+                <div class="div-text">
+                  <p>Huawei - <br />Coque Noir</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-2">
+            <div class="div-input">
+              <input
+                type="text"
+                name="promo"
+                id="promo"
+                placeholder="Code de réduction"
+              />
+              <button type="submit">Appliquer</button>
+            </div>
+            <div>
+              <p>Sous-total</p>
+              <p>45,99€</p>
+            </div>
+            <div>
+              <p>Livraison</p>
+              <p>-</p>
+            </div>
+            <div>
+              <p>Total à régler</p>
+              <p>45,99€</p>
+            </div>
+          </div>
+        </article>
+        <div class="div-container-3">
+          <p>
+            Nous vous remercions pour votre commande et nous vous offrons
+            <span>-10%</span> sur votre prochain achat.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div>
+          <img src="./Images/Logo/Logo.png" alt="Logo site Testa" />
+        </div>
+        <div>
+          <h5>Assistance</h5>
+          <ul>
+            <li><a href="#">Espace client</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Mieux nous connaître</h5>
+          <ul>
+            <li><a href="#">Qui sommes-nous ?</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">CGU</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#">Compte</a></li>
+            <li><a href="#">Connexion</a></li>
+            <li><a href="#">Inscription</a></li>
+          </ul>
+        </div>
+        <div>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram-square"></i>
+        </div>
+      </section>
+      <section>
+        <ul>
+          <li>France</li>
+          <li>-</li>
+          <li>Allemagne</li>
+          <li>-</li>
+          <li>Espagne</li>
+          <li>-</li>
+          <li>Canada</li>
+          <li>-</li>
+          <li>Italie</li>
+          <li>-</li>
+          <li>Royaume-Unis</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

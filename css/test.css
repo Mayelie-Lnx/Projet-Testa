@@ -1,0 +1,65 @@
+input[type="radio"] + label {
+  font-weight: 400;
+  font-size: 14px;
+}
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+
+.test-1 input[type="radio"] + label span {
+  background: linear-gradient(
+    to left,
+    #fb8995 33.33%,
+    #3e5585 33.33%,
+    #3e5585 66.66%,
+    #ff0048 66.66%
+  );
+}
+input[type="radio"]:checked + label {
+  color: #333;
+  font-weight: 700;
+}
+.test-1 input[type="radio"]:checked + label span {
+  border: 2px solid #41bc3c;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.test-2 input[type="radio"]:checked + label span {
+  border: 2px solid #3d84d6;
+  background: linear-gradient(
+    to left,
+    #121212 33.33%,
+    #a5a8aa 33.33%,
+    #a5a8aa 66.66%,
+    #044eb6 66.66%
+  );
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.24s linear;
+  -o-transition: background-color 0.24s linear;
+  -moz-transition: background-color 0.24s linear;
+  transition: background-color 0.24s linear;
+}
+/* ========================================== */
+/* ================= INPUT ================== */
+/* ========================================== */
+
+section form div {
+  padding: 1rem;
+  border: 1px solid black;
+  padding: 0;
+  width: 25%;
+}
+section form select {
+  width: 80%;
+  padding: 1rem;
+}
