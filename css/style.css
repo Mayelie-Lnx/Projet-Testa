@@ -231,7 +231,7 @@ article .article-div-img i:hover {
 .article-div-img div:nth-child(1) {
   background-color: #1b2b26;
   color: white;
-  height: 4.7vh;
+  height: 4.5vh;
   border-radius: 20px;
   width: 2rem;
   animation: grow-and-shrink 2000ms;
