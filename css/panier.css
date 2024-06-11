@@ -35,6 +35,9 @@ nav form i {
   margin: 0;
   padding: 0.2rem;
 }
+nav ul {
+  display: flex;
+}
 nav li a {
   color: white;
   font-size: 13px;
@@ -540,7 +543,8 @@ button {
   nav ul li:nth-child(1) {
     display: none;
   }
-  nav div ul li:nth-child(1) {
+  nav div ul li:nth-child(2),
+  nav .menu-burger ul li:nth-child(1) {
     display: block;
   }
   .fa-shopping-bag {
@@ -577,7 +581,7 @@ button {
   .menu-burger {
     display: block;
     position: absolute;
-    top: 4.5rem;
+    top: 3.8rem;
     left: -100%;
     display: flex;
     justify-content: center;
@@ -676,7 +680,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   nav {
-    height: 11vh;
+    max-height: 10vh;
   }
   nav img {
     width: 60px;
@@ -687,11 +691,15 @@ button {
   nav ul {
     margin-left: -10rem;
   }
+
   nav .fa-shopping-bag {
     font-size: 20px;
   }
   .menu-burger ul {
     margin: 0;
+  }
+  nav form div {
+    top: 3.7rem;
   }
   footer section:nth-child(2) ul {
     flex-wrap: wrap;
@@ -720,11 +728,25 @@ button {
   }
 }
 @media screen and (max-width: 425px) {
+  nav .fa-search,
+  .fas {
+    font-size: 15px;
+  }
+  nav form input {
+    width: 280px;
+  }
   header section p {
     font-size: 13px;
   }
   nav ul {
-    margin-left: -20rem;
+    margin-left: -15rem;
+  }
+  nav .fa-shopping-bag {
+    font-size: 17px;
+  }
+  .fa-solid,
+  .fas {
+    font-size: 25px;
   }
   article .div-paiement-img {
     width: 100%;
